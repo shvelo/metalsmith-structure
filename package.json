@@ -9,11 +9,11 @@
     "test": "mocha --reporter spec"
   },
   "dependencies": {
-    "cheerio": "^0.14.0"
+    "cheerio": "^1.0.0-rc.2"
   },
   "devDependencies": {
-    "mocha": "1.x",
-    "metalsmith": "0.x",
-    "metalsmith-markdown": "^0.2.1"
+    "metalsmith": "^2.3.0",
+    "metalsmith-markdown": "^1.1.0",
+    "mocha": "^5.2.0"
   }
 }
