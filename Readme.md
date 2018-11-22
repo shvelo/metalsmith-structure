@@ -1,5 +1,5 @@
 
-# metalsmith-structure
+# metalsmith-structure [![npm version](https://badge.fury.io/js/metalsmith-structure.svg)](https://badge.fury.io/js/metalsmith-structure)
 
 A Metalsmith plugin that transforms markdown-generated HTML to be hierarchically structured and extracts heading hierarchy for navigation.  
 Useful for generating a table of contents for your pages, or making your sections collapsible.
