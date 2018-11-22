@@ -1,20 +1,22 @@
 
-# metalsmith-headings
+# metalsmith-structure
 
-  A Metalsmith plugin that extracts headings from HTML files and attaches them to the file's metadata.
+  A Metalsmith plugin that transforms markdown-generated HTML to be hierarchically structured.
 
 ## Installation
 
-    $ npm install metalsmith-headings
+    $ npm install metalsmith-structure
 
 ## Example
 
 ```js
-var Metalsmith = require('metalsmith');
-var headings = require('metalsmith-headings');
+var Metalsmith = require('metalsmith'),
+  structure = require('metalsmith-structure');
 
 Metalsmith(__dirname)
-  .use(headings('h2'))
+  .use(structure({
+    headings: ['h1', 'h2', 'h3'] //headings to use for hierarchy, order matters
+  }))
   .build();
 ```
 
